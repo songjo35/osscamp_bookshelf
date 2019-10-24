@@ -31,8 +31,8 @@
             :loading="loading"
             class="login-button"
             type="primary"
-            native-type="submit"
-            block
+           
+            @click="fakeLogin"
             >Login</el-button
           >
         </el-form-item>
@@ -87,6 +87,10 @@ export default {
       return new Promise(resolve => {
         setTimeout(resolve, 800);
       });
+    },
+    fakeLogin(){
+        console.log("cuk");
+        this.$router.push('/home');
     },
     async login() {
       let valid = await this.$refs.form.validate();

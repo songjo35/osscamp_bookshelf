@@ -21,8 +21,8 @@
         </div>
 
         <!-- #1 : BookInfoModal window -->
-        <el-dialog title="Tips" :visible.sync="bookInfoModalShow" width="30%">
-            <span>This is a message</span>
+        <el-dialog title="1984" :visible.sync="bookInfoModalShow" width="30%">
+            <span>한줄평</span>
             <span slot="footer" class="dialog-footer">
                 <el-button @click="bookInfoModalShow = false">Cancel</el-button>
                 <el-button type="primary" @click="bookInfoModalShow = false">Confirm</el-button>
@@ -46,7 +46,7 @@
                 <el-form-item label="책 높이" label-width="120px">
                     <el-slider v-model="addBookForm.height" max="180" min="80"></el-slider>
                 </el-form-item>
-                <el-form-item label="책 너비">
+                <el-form-item label="책 너비" label-width="120px">
                     <el-slider v-model="addBookForm.width" max="100" min="50"></el-slider>
                 </el-form-item>
             </el-form>
@@ -58,8 +58,6 @@
 <script>
     import HelloWorld from '@/components/HelloWorld.vue'
     import BookBtn from '@/components/BookBtn.vue'
-    import BookInfo from '@/components/BookInfo.vue'
-    import AddBookPopup from '@/components/AddBookPopup.vue'
 
     export default {
         name: 'home',

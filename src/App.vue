@@ -1,9 +1,6 @@
 <template>
     <div id="app">
         <router-view />
-        <router-link to="/login">Login</router-link>
-        <span> | </span>
-        <router-link to="/">Home</router-link>
     </div>
 </template>
 
@@ -12,6 +9,8 @@
         margin: 0;
         padding: 0;
         background: #F1F1F1;
+        background-image: url("./image/LVs7-dots.png");
+        background-size: contain;
     }
     #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;

@@ -36,13 +36,7 @@ export default {
   flex-direction: column;
   min-height: 100vh;
 }
-body {
-  margin: 0;
-  padding: 0;
-  background: #102a43;
-  background-image: url("../image/LVs7-dots.png");
-  background-size: contain;
-}
+
 .footer,
 .header {
   padding: 20px 20px;
